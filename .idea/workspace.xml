@@ -81,53 +81,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606314385797</updated>
-      <workItem from="1606314387332" duration="6862000" />
+      <workItem from="1606314387332" duration="7955000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="273" key="GridCell.Tab.0.bottom" timestamp="1606321470751">
+    <state width="2518" height="349" key="GridCell.Tab.0.bottom" timestamp="1606322533493">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="273" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321470751" />
-    <state width="2518" height="273" key="GridCell.Tab.0.center" timestamp="1606321470750">
+    <state width="2518" height="349" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533493" />
+    <state width="2518" height="349" key="GridCell.Tab.0.center" timestamp="1606322533488">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="273" key="GridCell.Tab.0.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321470750" />
-    <state width="2518" height="273" key="GridCell.Tab.0.left" timestamp="1606321470750">
+    <state width="2518" height="349" key="GridCell.Tab.0.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533488" />
+    <state width="2518" height="349" key="GridCell.Tab.0.left" timestamp="1606322533485">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="273" key="GridCell.Tab.0.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321470750" />
-    <state width="2518" height="273" key="GridCell.Tab.0.right" timestamp="1606321470751">
+    <state width="2518" height="349" key="GridCell.Tab.0.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533485" />
+    <state width="2518" height="349" key="GridCell.Tab.0.right" timestamp="1606322533490">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="273" key="GridCell.Tab.0.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321470751" />
-    <state width="2518" height="470" key="GridCell.Tab.1.bottom" timestamp="1606321305516">
+    <state width="2518" height="349" key="GridCell.Tab.0.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533490" />
+    <state width="2518" height="349" key="GridCell.Tab.1.bottom" timestamp="1606322533503">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="470" key="GridCell.Tab.1.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321305516" />
-    <state width="2518" height="470" key="GridCell.Tab.1.center" timestamp="1606321305515">
+    <state width="2518" height="349" key="GridCell.Tab.1.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533503" />
+    <state width="2518" height="349" key="GridCell.Tab.1.center" timestamp="1606322533501">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="470" key="GridCell.Tab.1.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321305515" />
-    <state width="2518" height="470" key="GridCell.Tab.1.left" timestamp="1606321305515">
+    <state width="2518" height="349" key="GridCell.Tab.1.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533501" />
+    <state width="2518" height="349" key="GridCell.Tab.1.left" timestamp="1606322533499">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="470" key="GridCell.Tab.1.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321305515" />
-    <state width="2518" height="470" key="GridCell.Tab.1.right" timestamp="1606321305515">
+    <state width="2518" height="349" key="GridCell.Tab.1.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533499" />
+    <state width="2518" height="349" key="GridCell.Tab.1.right" timestamp="1606322533502">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606321305515" />
+    <state width="2518" height="349" key="GridCell.Tab.1.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606322533502" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/language.rs</url>
-          <line>340</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CargoCommandRunConfiguration">
+        <watch expression="self.scanner.buffer.as_bytes()[9]" language="Rust" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

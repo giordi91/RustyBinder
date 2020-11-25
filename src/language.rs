@@ -124,7 +124,6 @@ impl Scanner {
                             if self.is_at_end() { return; }
                             '\0'
                         }
-                        '\0' => return,
                         _ => return,
                     }
                 }
@@ -193,6 +192,7 @@ impl Compiler {
                 true => self.make_token(TokenType::GreaterEqual),
                 false => self.make_token(TokenType::Greater),
             },
+            //'"' => return self.scanner.string(),
             _ => (),
         }
 
@@ -342,12 +342,10 @@ fn scanner_parse_unary_values_comment_1() {
     assert_eq!(tok.tok_type == TokenType::EOF, true);
 }
 
-/*
 #[test]
 fn scanner_parse_unary_values_comment_2() {
-    let source = "}}}//{{{".to_string();
+    let source = "}}}\n//{{{".to_string();
     let mut compiler = Compiler::from_source(&source);
-    let mut tok = compiler.scan_token();
     let mut tok = compiler.scan_token();
     assert_eq!(tok.tok_type == TokenType::RightBrace, true);
     tok = compiler.scan_token();
@@ -357,4 +355,21 @@ fn scanner_parse_unary_values_comment_2() {
     tok = compiler.scan_token();
     assert_eq!(tok.tok_type == TokenType::EOF, true);
 }
-*/
+
+#[test]
+fn scanner_parse_unary_values_comment_3() {
+    let source = "}}}\n//{{{\n//fksldjfsl\n}!".to_string();
+    let mut compiler = Compiler::from_source(&source);
+    let mut tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::Bang, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
+}
