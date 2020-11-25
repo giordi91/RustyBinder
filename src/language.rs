@@ -1,6 +1,7 @@
-use wasm_bindgen::prelude::*;
+//use wasm_bindgen::prelude::*;
 
 #[derive(PartialEq, Debug)]
+#[allow(dead_code)]
 enum TokenType {
     // Single-character tokens.
     LeftParen,
@@ -51,6 +52,7 @@ enum TokenType {
     EOF,
 }
 
+#[allow(dead_code)]
 struct Token {
     tok_type: TokenType,
     start: i32,
@@ -93,6 +95,11 @@ impl Scanner {
     {
         self.buffer.as_bytes()[self.current as usize] as char
     }
+    fn peek_next(&self) -> char
+    {
+        if self.is_at_end() { return '\0'; }
+        self.buffer.as_bytes()[(self.current + 1) as usize] as char
+    }
     fn skip_whitespaces(&mut self)
     {
         loop {
@@ -101,6 +108,26 @@ impl Scanner {
                 ' ' => self.advance(),
                 '\r' => self.advance(),
                 '\t' => self.advance(),
+                '\n' => {
+                    self.line += 1;
+                    self.advance();
+                    '\n'
+                }
+                '/' => {
+                    let p = self.peek_next();
+                    match p {
+                        '/' => {
+                            //swallow the comment until end of the line
+                            while !self.is_at_end() && self.peek() != '\n' {
+                                self.advance();
+                            };
+                            if self.is_at_end() { return; }
+                            '\0'
+                        }
+                        '\0' => return,
+                        _ => return,
+                    }
+                }
                 _ => return,
             };
         }
@@ -127,9 +154,14 @@ impl Compiler {
         }
     }
     fn scan_token(&mut self) -> Token {
+        //if we are at the end of the file we return
         if self.scanner.is_at_end() { return self.make_token(TokenType::EOF); }
 
         self.scanner.skip_whitespaces();
+
+        //we skipped the whitespaces, that might have left us at the end of file, so we do an
+        //extra check
+        if self.scanner.is_at_end() { return self.make_token(TokenType::EOF); }
 
         let c = self.scanner.advance();
 
@@ -257,7 +289,10 @@ fn scanner_parse_unary_values() {
     assert_eq!(tok.tok_type == TokenType::GreaterEqual, true);
     tok = compiler.scan_token();
     assert_eq!(tok.tok_type == TokenType::Greater, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
 }
+
 #[test]
 fn scanner_parse_unary_values_white_spaces() {
     let source = " (      \t  )\r\r{".to_string();
@@ -268,4 +303,58 @@ fn scanner_parse_unary_values_white_spaces() {
     assert_eq!(tok.tok_type == TokenType::RightParen, true);
     tok = compiler.scan_token();
     assert_eq!(tok.tok_type == TokenType::LeftBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
 }
+
+#[test]
+fn scanner_parse_unary_values_new_line() {
+    let source = "}}}\n{{{".to_string();
+    let mut compiler = Compiler::from_source(&source);
+    let mut tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(compiler.scanner.line == 2, true);
+    assert_eq!(tok.tok_type == TokenType::LeftBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::LeftBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::LeftBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
+}
+
+#[test]
+fn scanner_parse_unary_values_comment_1() {
+    let source = "}}}//{{{".to_string();
+    let mut compiler = Compiler::from_source(&source);
+    let mut tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
+}
+
+/*
+#[test]
+fn scanner_parse_unary_values_comment_2() {
+    let source = "}}}//{{{".to_string();
+    let mut compiler = Compiler::from_source(&source);
+    let mut tok = compiler.scan_token();
+    let mut tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::RightBrace, true);
+    tok = compiler.scan_token();
+    assert_eq!(tok.tok_type == TokenType::EOF, true);
+}
+*/
