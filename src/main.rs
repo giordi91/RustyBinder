@@ -1,6 +1,6 @@
-mod code;
+mod language;
 
-fn main()
-{
-    code::test_me(10,11);
+fn main() {
+    //language::test_me(10, 11);
+    println!("hello")
 }

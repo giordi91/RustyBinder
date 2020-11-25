@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d791bb4b-8315-4dae-9aa1-5c5eb591ee67" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="a9ztedek" />
+  </component>
+  <component name="ProjectId" id="1kmmxHRwSbj4B5TfQIeJI6lQVhR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+  </component>
+  <component name="RunManager" selected="Cargo.Test language">
+    <configuration name="Test language" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package testwasm --bin testwasm language" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test language::compiler_parse_empty" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package testwasm --bin testwasm language::compiler_parse_empty -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Test language" />
+        <item itemvalue="Cargo.Test language::compiler_parse_empty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d791bb4b-8315-4dae-9aa1-5c5eb591ee67" name="Default Changelist" comment="" />
+      <created>1606314385797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606314385797</updated>
+      <workItem from="1606314387332" duration="4863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2518" height="470" key="GridCell.Tab.0.bottom" timestamp="1606319439519">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.0.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319439519" />
+    <state width="2518" height="470" key="GridCell.Tab.0.center" timestamp="1606319439518">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.0.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319439518" />
+    <state width="2518" height="470" key="GridCell.Tab.0.left" timestamp="1606319439517">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.0.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319439517" />
+    <state width="2518" height="470" key="GridCell.Tab.0.right" timestamp="1606319439518">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.0.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319439518" />
+    <state width="2518" height="470" key="GridCell.Tab.1.bottom" timestamp="1606319440669">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.1.bottom/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319440669" />
+    <state width="2518" height="470" key="GridCell.Tab.1.center" timestamp="1606319440668">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.1.center/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319440668" />
+    <state width="2518" height="470" key="GridCell.Tab.1.left" timestamp="1606319440668">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.1.left/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319440668" />
+    <state width="2518" height="470" key="GridCell.Tab.1.right" timestamp="1606319440669">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1417/-1440.201.1440.877/2560.183.1920.977@0.23.2560.1417" timestamp="1606319440669" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/language.rs</url>
+          <line>265</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
